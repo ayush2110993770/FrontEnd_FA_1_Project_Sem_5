@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg-gradient-to-br from-cyan-100 to-white-100">
+        <header class="z-50 flex p-4 bg-gradient-to-r from-cyan-500 to-blue-500">
+            <h1 class="text-3xl font-bold text-white">RobeHouse</h1>
+            <!--z-50: on top of 50 elements, flex: determine height of children based on width of page, padding = 6 pixels--->
+            <!-- <img class="h-8 w-auto" src="logo.png" alt=""> -->
+            <!--h8: height is 8 pixels and w-auto: width determined naturally-->
+        </header>
+        <div>
+            <div class="mx-auto max-w-2xl pt-32 pb-10 text-center">
+                <!-- mx-auto: centers element horizontally within its container, max-w-2xl: maximum width 1200 pixels, py-32: padding on top and bottom -->
+                <h1 class="text-6xl font-bold tracking-tight text-gray-900">Super Charge Your Wardrobe</h1>
+                <!-- tracking-light: less space between letters -->
+                <p class="pt-6 text-lg leading-8 text-gray-600">Shop RobeHouse for stylish and affordable clothes that
+                    will make you look and feel your best.</p>
+                <!-- leading-8: 8px space b/w text vertically -->
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <input type="search" id="searchInput"
+                class="text-lg mx-3 text-gray-900 border-2 border-gray-400 rounded-full py-2 w-96 focus:outline-none px-3 flex hover:drop-shadow-lg"
+                placeholder="Search...">
+            <button id="searchButton"
+                class="text-lg text-white text-gray-900 border-2 bg-cyan-500 border-gray-400 rounded-full py-2 w-20 focus:outline-none px-3 hover:drop-shadow-lg">Find
+            </button>
+        </div>
+        <div class="flex flex-wrap justify-center py-32" id="results"></div>
+    </div>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="products.js"></script>
+</body>
+
+</html>
